@@ -31,7 +31,7 @@ app.MapGet("/bloodsugermeasurements", () =>
         for (int moments = 0; moments < 10; moments++)
         { 
             var value = random.Next(30, 100) / 10.0m;
-            var remark = random.Next(0, 10) > 7 ? "Remark" : null;
+            var remark = random.Next(0, 10) > 7 ? "Auto generated remark" : null;
 
             var randomHour = random.Next(0, 24);
 
